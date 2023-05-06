@@ -83,3 +83,8 @@ func NewEdge(url, dir string, width, height int, additionalArgs ...string) (UI, 
 func NewGoogleChrome(url, dir string, width, height int, additionalArgs ...string) (UI, error) {
 	return NewHtml5(GoogleChromeExecutable(), url, dir, width, height, additionalArgs...)
 }
+
+// NewBrave returns a new Brave HTML5 UI.
+func NewBrave(url, dir string, width, height int, additionalArgs ...string) (UI, error) {
+	return NewHtml5(BraveExecutable(), url, dir, width, height, additionalArgs...)
+}
